@@ -77,7 +77,7 @@ export function FAQSection() {
       className="relative py-20 md:py-28 bg-cream overflow-hidden"
       aria-labelledby="faq-heading"
     >
-      <BlurBlobs variant="cream" />
+      <div className="hidden sm:block"><BlurBlobs variant="cream" /></div>
       {/* Grande illustration fond — grande_2 */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img

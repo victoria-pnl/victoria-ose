@@ -47,7 +47,7 @@ export function TransformationSection() {
         src="/illustrations/reflexion.svg"
         alt=""
         aria-hidden="true"
-        className="absolute -bottom-14 -right-10 w-80 md:w-[400px] pointer-events-none select-none"
+        className="hidden sm:block absolute -bottom-14 -right-10 w-80 md:w-[400px] pointer-events-none select-none"
       />
 
       {/* Grande illustration de fond — grande_3, gauche */}

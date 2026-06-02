@@ -23,7 +23,7 @@ export function ProblemSection() {
       {/* Illustration femme — grande, bas gauche */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/illustrations/depressed.svg" alt="" aria-hidden="true"
-        className="absolute -bottom-10 -left-12 w-72 md:w-96 pointer-events-none select-none" />
+        className="hidden sm:block absolute -bottom-10 -left-12 w-72 md:w-96 pointer-events-none select-none" />
       <BlurBlobs variant="beige" />
 
       {/* Grande illustration de fond — grande_2, droite */}
@@ -41,10 +41,12 @@ export function ProblemSection() {
           <motion.div variants={staggerContainer} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {problems.map((p) => (
               <motion.div key={p.title} variants={fadeInUp} className="bg-cream rounded-3xl p-6 shadow-soft border border-light-beige/60 hover:shadow-soft-md transition-shadow duration-300">
-                <div className="w-10 h-10 rounded-2xl bg-warm-beige flex items-center justify-center mb-4">
-                  <p.icon size={20} className="text-warm-brown" aria-hidden="true" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-2xl bg-warm-beige flex items-center justify-center flex-shrink-0">
+                    <p.icon size={20} className="text-warm-brown" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-serif text-xl text-dark-brown leading-snug">{p.title}</h3>
                 </div>
-                <h3 className="font-serif text-xl text-dark-brown mb-2 leading-snug">{p.title}</h3>
                 <p className="font-sans text-sm text-mid-brown leading-relaxed">{p.desc}</p>
               </motion.div>
             ))}

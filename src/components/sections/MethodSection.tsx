@@ -20,7 +20,7 @@ export function MethodSection() {
       {/* Illustration femme — yoga, gauche centre */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/illustrations/yoga.svg" alt="" aria-hidden="true"
-        className="absolute -left-12 top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none select-none" />
+        className="hidden sm:block absolute -left-12 top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none select-none" />
       <BlurBlobs variant="beige" />
 
       {/* Grande illustration de fond — grande_1, droite */}

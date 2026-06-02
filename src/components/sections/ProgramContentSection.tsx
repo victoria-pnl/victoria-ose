@@ -85,16 +85,18 @@ export function ProgramContentSection() {
                 variants={fadeInUp}
                 className="group bg-warm-beige rounded-3xl p-6 border border-light-beige/60 hover:bg-off-white hover:shadow-soft-md transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-2xl bg-cream group-hover:bg-warm-beige flex items-center justify-center mb-5 transition-colors duration-300">
-                  <c.icon
-                    size={22}
-                    className="text-warm-brown"
-                    aria-hidden="true"
-                  />
+                <div className="flex items-center gap-3 mb-3 sm:flex-col sm:items-start sm:gap-0">
+                  <div className="w-12 h-12 rounded-2xl bg-cream group-hover:bg-warm-beige flex items-center justify-center flex-shrink-0 sm:mb-5 transition-colors duration-300">
+                    <c.icon
+                      size={22}
+                      className="text-warm-brown"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 className="font-serif text-xl text-dark-brown leading-snug sm:mb-2">
+                    {c.title}
+                  </h3>
                 </div>
-                <h3 className="font-serif text-xl text-dark-brown mb-2 leading-snug">
-                  {c.title}
-                </h3>
                 <p className="font-sans text-sm text-mid-brown leading-relaxed">
                   {c.description}
                 </p>

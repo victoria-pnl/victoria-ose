@@ -149,9 +149,9 @@ export function OfferSection() {
                 href={siteConfig.calendlyOseUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-sans text-sm text-off-white/70 hover:text-off-white transition-colors duration-200 underline underline-offset-4 decoration-off-white/30 hover:decoration-off-white/60"
+                className="inline-flex items-center gap-3 font-sans text-sm text-off-white/70 hover:text-off-white transition-colors duration-200 underline underline-offset-4 decoration-off-white/30 hover:decoration-off-white/60"
               >
-                <CalendarDays size={15} aria-hidden="true" />
+                <CalendarDays size={22} className="flex-shrink-0" aria-hidden="true" />
                 Pas encore sûre&nbsp;? Réserve une consultation gratuite de 30 min ✨
               </a>
             </div>
@@ -195,11 +195,10 @@ export function OfferSection() {
           {/* Mention paiement sécurisé */}
           <motion.p
             variants={fadeInUp}
-            className="font-sans text-sm text-light-beige/70 flex items-center justify-center gap-2"
+            className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center font-sans text-sm text-light-beige/70 text-center"
           >
-            <Shield size={14} aria-hidden="true" />
-            Le paiement est sécurisé et s&apos;effectue via notre prestataire
-            externe.
+            <Shield size={22} className="flex-shrink-0" aria-hidden="true" />
+            <span>Le paiement est sécurisé et s&apos;effectue via notre prestataire externe.</span>
           </motion.p>
         </motion.div>
       </div>
