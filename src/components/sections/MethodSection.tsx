@@ -26,7 +26,7 @@ export function MethodSection() {
       {/* Grande illustration de fond — grande_1, droite */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/illustrations/grande_1.svg" alt="" aria-hidden="true"
-        className="absolute right-0 top-0 h-full w-auto max-w-[35%] opacity-[0.12] pointer-events-none select-none" />
+        className="hidden sm:block absolute right-0 top-0 h-full w-auto max-w-[35%] opacity-[0.12] pointer-events-none select-none" />
 
       {/* Feuilles */}
 
