@@ -72,7 +72,7 @@ export function OfferSection() {
           {/* Tag */}
           <motion.p
             variants={fadeInUp}
-            className="font-script text-dusty-rose text-3xl mb-4"
+            className="font-script text-dusty-rose text-2xl md:text-3xl mb-4"
           >
             Prête à commencer ?
           </motion.p>
@@ -104,7 +104,7 @@ export function OfferSection() {
             {/* Prix */}
             {/* ⚠️ À MODIFIER : prix définitif */}
             <div className="mb-8">
-              <p className="font-script text-dusty-rose text-3xl mb-2">
+              <p className="font-script text-dusty-rose text-2xl md:text-3xl mb-2">
                 Investissement
               </p>
               <p className="font-serif text-6xl text-off-white">
@@ -159,7 +159,7 @@ export function OfferSection() {
 
           {/* Séances de coaching individuelles */}
           <motion.div variants={fadeInUp} className="mb-8">
-            <p className="font-script text-dusty-rose text-3xl mb-1">
+            <p className="font-script text-dusty-rose text-2xl md:text-3xl mb-1">
               Tu préfères une séance individuelle ?
             </p>
             <p className="font-sans text-sm text-light-beige/70 mb-5">

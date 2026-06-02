@@ -44,7 +44,7 @@ export function MethodSection() {
                 </div>
                 <h3 className="font-serif text-xl text-dark-brown mb-3 leading-snug">{step.title}</h3>
                 <p className="font-sans text-sm text-mid-brown leading-relaxed">{step.description}</p>
-                {i < steps.length - 1 && <div className="lg:hidden mt-4 text-light-beige text-2xl" aria-hidden="true">↓</div>}
+                {i < steps.length - 1 && <div className="lg:hidden mt-4 text-warm-brown text-2xl" aria-hidden="true">↓</div>}
               </motion.div>
             ))}
           </motion.div>
