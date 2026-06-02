@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsappUrl: "https://wa.me/00000000000",
 
   instagramUrl: "https://www.instagram.com/victoria.coachpnl",
-  tiktokUrl: "#",
+  tiktokUrl: "https://www.tiktok.com/@victoria.coachpnl",
   linktreeUrl: "https://linktr.ee/victoria.coachpnl",
 
   // ⚠️ À MODIFIER : prix définitif de l'accompagnement (ex: "297 €", "3 × 99 €", etc.)

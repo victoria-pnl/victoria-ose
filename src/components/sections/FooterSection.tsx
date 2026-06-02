@@ -49,6 +49,11 @@ const socials = [
     Icon: InstagramIcon,
   },
   {
+    label: "TikTok",
+    href: siteConfig.tiktokUrl,
+    Icon: TikTokIcon,
+  },
+  {
     label: "WhatsApp",
     href: siteConfig.whatsappUrl,
     Icon: MessageCircle,
@@ -95,18 +100,6 @@ export function FooterSection() {
                 <s.Icon size={18} />
               </Link>
             ))}
-            {/* TikTok */}
-            {siteConfig.tiktokUrl !== "#" && (
-              <Link
-                href={siteConfig.tiktokUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-off-white/20 flex items-center justify-center text-off-white/70 hover:text-off-white hover:border-off-white/50 transition-all duration-200"
-                aria-label="TikTok"
-              >
-                <TikTokIcon size={18} />
-              </Link>
-            )}
           </motion.div>
 
           {/* Divider */}
