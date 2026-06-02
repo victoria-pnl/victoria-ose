@@ -6,7 +6,13 @@ export const siteConfig = {
   paymentUrl: "https://buy.stripe.com/test_eVq28s86y6a59Z52or5ZC00",
 
   // ⚠️ À MODIFIER : numéro WhatsApp de Victoria (format international, ex: +33612345678)
-  whatsappUrl: "https://wa.me/00000000000",
+  whatsappUrl: "https://api.whatsapp.com/send/?phone=32471827123&text&type=phone_number&app_absent=0",
+
+  // Calendly
+  calendlyOseUrl: "https://calendly.com/puttemansvicky/consultation-programme-ose-anti-procrastination",
+  calendlyGrezUrl: "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-grez-doiceau",
+  calendlyHelecineUrl: "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-helecine",
+  calendlyOnlineUrl: "https://calendly.com/puttemansvicky/20min",
 
   instagramUrl: "https://www.instagram.com/victoria.coachpnl",
   tiktokUrl: "https://www.tiktok.com/@victoria.coachpnl",

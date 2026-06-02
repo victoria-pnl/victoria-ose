@@ -143,7 +143,7 @@ export function HeroSection() {
                 className="absolute -top-3 right-4 bg-warm-brown rounded-full px-4 py-2 shadow-soft"
               >
                 <p className="font-sans text-off-white text-xs font-medium tracking-wide">
-                  Coach PNL
+                  Victoria Puttemans
                 </p>
               </motion.div>
             </div>

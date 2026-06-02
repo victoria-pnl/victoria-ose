@@ -82,7 +82,7 @@ export function FooterSection() {
               Victoria
             </p>
             <p className="font-serif text-off-white text-xl tracking-wide">
-              Ta Coach PNL
+              Coach PNL
             </p>
           </motion.div>
 
