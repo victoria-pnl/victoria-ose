@@ -59,7 +59,7 @@ export function ProgramContentSection() {
         src="/illustrations/love.svg"
         alt=""
         aria-hidden="true"
-        className="absolute -bottom-14 -right-10 w-72 md:w-[380px] pointer-events-none select-none"
+        className="hidden sm:block absolute -bottom-14 -right-10 w-72 md:w-[380px] pointer-events-none select-none"
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8">
