@@ -84,24 +84,22 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-auto">
-                <CTAButton
-                  href={siteConfig.livretUrl}
-                  variant="white"
-                  size="md"
-                  external
-                  className="w-full justify-center"
-                  icon={<BookOpen size={16} aria-hidden="true" />}
-                >
-                  Télécharger gratuitement
-                </CTAButton>
-              </div>
+              <CTAButton
+                href={siteConfig.livretUrl}
+                variant="white"
+                size="md"
+                external
+                className="w-full justify-center"
+                icon={<BookOpen size={16} aria-hidden="true" />}
+              >
+                Télécharger gratuitement
+              </CTAButton>
             </div>
 
             {/* Card programme OSE */}
             <div className="bg-cream/10 backdrop-blur-sm rounded-3xl p-7 border border-off-white/20 flex flex-col text-left">
               <div className="mb-5">
-                <p className="font-script text-dusty-rose text-2xl mb-2">Investissement</p>
+                <p className="font-script text-dusty-rose text-2xl mb-2">Pour nous rejoindre</p>
                 <p className="font-serif text-5xl text-off-white">{siteConfig.price}</p>
                 <p className="font-sans text-light-beige/70 text-sm mt-1">{siteConfig.priceSubtitle}</p>
               </div>
@@ -113,17 +111,16 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-auto">
-                <CTAButton
-                  href={siteConfig.paymentUrl}
-                  variant="white"
-                  size="md"
-                  external
-                  className="w-full justify-center"
-                  icon={<ArrowRight size={16} aria-hidden="true" />}
-                >
-                  Rejoindre l&apos;accompagnement
-                </CTAButton>
+              <CTAButton
+                href={siteConfig.paymentUrl}
+                variant="white"
+                size="md"
+                external
+                className="w-full justify-center"
+                icon={<ArrowRight size={16} aria-hidden="true" />}
+              >
+                Rejoindre l&apos;accompagnement
+              </CTAButton>
               <p className="mt-3 font-sans text-xs text-off-white/50 text-center">
                 Tu hésites ?{" "}
                 <a href={siteConfig.whatsappUrl} target="_blank" rel="noopener noreferrer"
@@ -131,7 +128,6 @@ export function OfferSection() {
                   Écris-moi sur WhatsApp
                 </a>
               </p>
-              </div>
             </div>
           </motion.div>
 
