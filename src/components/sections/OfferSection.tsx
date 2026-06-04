@@ -67,16 +67,16 @@ export function OfferSection() {
             {/* Card livret découverte */}
             <div className="bg-cream/10 backdrop-blur-sm rounded-3xl p-7 border border-off-white/20 flex flex-col text-left">
               <div className="mb-5">
-                <span className="inline-flex items-center gap-1.5 bg-dusty-rose/20 text-dusty-rose font-sans text-xs px-3 py-1 rounded-full mb-4">
+                <p className="font-script text-dusty-rose text-2xl mb-1">Livret découverte</p>
+                <p className="font-serif text-xl text-off-white leading-snug mb-3">
+                  Pourquoi tu procrastines ?
+                </p>
+                <span className="inline-flex items-center gap-1.5 bg-dusty-rose/20 text-dusty-rose font-sans text-xs px-3 py-1 rounded-full">
                   <BookOpen size={12} aria-hidden="true" />
                   Offert gratuitement
                 </span>
-                <p className="font-script text-dusty-rose text-2xl mb-1">Livret découverte</p>
-                <p className="font-serif text-xl text-off-white leading-snug">
-                  Pourquoi tu procrastines ?
-                </p>
               </div>
-              <ul className="space-y-2.5 mb-6 flex-1">
+              <ul className="space-y-2.5 mt-4 mb-6">
                 {livretPoints.map((p) => (
                   <li key={p} className="flex items-start gap-2.5">
                     <CheckCircle2 size={16} className="text-dusty-rose flex-shrink-0 mt-0.5" aria-hidden="true" />
@@ -84,16 +84,20 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <CTAButton
-                href={siteConfig.livretUrl}
-                variant="white"
-                size="md"
-                external
-                className="w-full justify-center mt-auto"
-                icon={<BookOpen size={16} aria-hidden="true" />}
-              >
-                Télécharger gratuitement
-              </CTAButton>
+              <div className="mt-auto">
+                <motion.a
+                  href={siteConfig.livretUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full inline-flex items-center justify-center gap-2 font-sans font-medium text-base rounded-full bg-off-white text-warm-brown hover:bg-cream shadow-soft hover:shadow-soft-md transition-all duration-200 px-7 py-3.5"
+                >
+                  <BookOpen size={16} aria-hidden="true" />
+                  Télécharger gratuitement
+                </motion.a>
+                <p className="mt-3 font-sans text-xs text-transparent text-center select-none" aria-hidden="true">placeholder</p>
+              </div>
             </div>
 
             {/* Card programme OSE */}
