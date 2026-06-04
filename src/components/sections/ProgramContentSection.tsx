@@ -11,9 +11,9 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 const contents = [
   {
     icon: Video,
-    title: "12 semaines de transformation",
+    title: "90 jours d'accompagnement",
     description:
-      "Chaque semaine un thème, un plan d'action et des exercices concrets à appliquer dans ton quotidien.",
+      "12 semaines avec un thème, un plan d'action et des exercices concrets à appliquer dans ton quotidien.",
   },
   {
     icon: Star,

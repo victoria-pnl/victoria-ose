@@ -9,7 +9,7 @@ import { staggerContainer } from "@/lib/animations";
 
 const profiles = [
   { title: "Tu te sens constamment débordée", description: "Les journées filent et tu as l'impression de courir après tout sans jamais vraiment avancer." },
-  { title: "Tu repousses au lendemain", description: "Tu sais ce que tu dois faire, mais le moment de commencer ne arrive jamais vraiment." },
+  { title: "Tu repousses au lendemain", description: "Tu sais ce que tu dois faire, mais le moment de commencer n'arrive jamais vraiment." },
   { title: "Tu as plein d'idées… mais peu d'action", description: "Les projets s'accumulent dans ta tête. Tu réfléchis beaucoup, tu avances peu." },
   { title: "Tu veux reprendre ta place", description: "Tu sens que tu t'es perdue en chemin. Tu veux retrouver ton énergie, ta direction, toi." },
 ];

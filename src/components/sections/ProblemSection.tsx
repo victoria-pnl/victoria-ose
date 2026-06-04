@@ -10,7 +10,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 const problems = [
   { icon: Clock, title: "Tu repousses tout au lendemain", desc: "Les tâches s'accumulent, la liste ne raccourcit jamais, et tu te sens toujours en retard sur toi-même." },
   { icon: Brain, title: "Ta tête est constamment pleine", desc: "La charge mentale est épuisante. Tu penses à tout, tu gères tout, mais tu avances peu." },
-  { icon: Layers, title: "L'organisation te résiste", desc: "Tu essaies des méthodes, des planners, des apps rien ne tient sur la durée." },
+  { icon: Layers, title: "L'organisation te résiste", desc: "Tu essaies des méthodes, des planners, des applications… mais rien ne tient sur la durée." },
   { icon: Heart, title: "La confiance n'est plus là", desc: "Tu doutes de toi, tu te compares, tu attends d'être « prête » pour commencer." },
   { icon: Target, title: "Tes objectifs restent flous", desc: "Tu sais que tu veux autre chose, mais tu n'arrives pas à nommer ce que c'est vraiment." },
   { icon: MoveRight, title: "Passer à l'action bloque", desc: "Tu analyses, tu réfléchis, tu planifies… mais le premier pas reste le plus dur." },

@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 
 const included = [
-  "12 semaines d'accompagnement",
+  "90 jours d'accompagnement (12 semaines)",
   "3 appels personnalisés (début, milieu, fin)",
   "1 livret PDF par semaine",
   "Suivi WhatsApp pendant 3 mois",
@@ -121,6 +121,18 @@ export function OfferSection() {
             >
               Rejoindre l&apos;accompagnement
             </CTAButton>
+
+            {/* CTA contact WhatsApp */}
+            <div className="mt-4">
+              <a
+                href={siteConfig.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-sans text-sm text-off-white/60 hover:text-off-white transition-colors duration-200"
+              >
+                Tu hésites encore ? Écris-moi sur WhatsApp, je te réponds personnellement.
+              </a>
+            </div>
 
             {/* CTA secondaire — livret découverte */}
             <div className="mt-5">
