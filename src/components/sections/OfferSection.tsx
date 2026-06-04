@@ -27,13 +27,12 @@ const sessions = [
   },
 ];
 
-// ⚠️ À MODIFIER : liste des éléments inclus dans l'offre quand Victoria confirme
 const included = [
-  "Séances individuelles personnalisées",
-  "Suivi entre les séances",
-  "Livrets et supports exclusifs",
-  "Exercices pratiques PNL",
-  "Accompagnement adapté à ton rythme",
+  "12 semaines d'accompagnement",
+  "3 appels personnalisés (début, milieu, fin)",
+  "1 livret PDF par semaine",
+  "Suivi WhatsApp pendant 3 mois",
+  "Défis d'action hebdomadaires",
 ];
 
 export function OfferSection() {

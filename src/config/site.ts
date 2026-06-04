@@ -2,25 +2,27 @@ export const siteConfig = {
   name: "Victoria Coach PNL",
   programName: "Accompagnement OSE",
 
-  // ⚠️ À MODIFIER : lien de paiement Stripe ou SumUp de Victoria
+  // ⚠️ À MODIFIER : lien de paiement Stripe
   paymentUrl: "https://buy.stripe.com/test_eVq28s86y6a59Z52or5ZC00",
 
-  // ⚠️ À MODIFIER : numéro WhatsApp de Victoria (format international, ex: +33612345678)
-  whatsappUrl: "https://api.whatsapp.com/send/?phone=32471827123&text&type=phone_number&app_absent=0",
+  // Lien WhatsApp
+  whatsappUrl:
+    "https://api.whatsapp.com/send/?phone=32471827123&text&type=phone_number&app_absent=0",
 
   // Calendly
-  calendlyOseUrl: "https://calendly.com/puttemansvicky/consultation-programme-ose-anti-procrastination",
-  calendlyGrezUrl: "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-grez-doiceau",
-  calendlyHelecineUrl: "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-helecine",
+  calendlyOseUrl:
+    "https://calendly.com/puttemansvicky/consultation-programme-ose-anti-procrastination",
+  calendlyGrezUrl:
+    "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-grez-doiceau",
+  calendlyHelecineUrl:
+    "https://calendly.com/puttemansvicky/seance-de-coaching-motivationnel-cabinet-helecine",
   calendlyOnlineUrl: "https://calendly.com/puttemansvicky/20min",
 
   instagramUrl: "https://www.instagram.com/victoria.coachpnl",
   tiktokUrl: "https://www.tiktok.com/@victoria.coachpnl",
   linktreeUrl: "https://linktr.ee/victoria.coachpnl",
 
-  // ⚠️ À MODIFIER : prix définitif de l'accompagnement (ex: "297 €", "3 × 99 €", etc.)
-  price: "Sur demande",
-
-  // ⚠️ À MODIFIER : sous-titre prix (ex: "Paiement en 3 fois possible", "Tarif unique")
+  // ⚠️ À CONFIRMER avec Victoria
+  price: "279 €",
   priceSubtitle: "Contacte-moi pour en savoir plus",
 };

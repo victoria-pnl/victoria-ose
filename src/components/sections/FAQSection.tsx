@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Comment se déroule l'accompagnement ?",
-    a: "L'accompagnement comprend des séances individuelles (en visio ou autre format), un suivi entre les séances, et des supports pratiques. Chaque parcours est adapté à ta situation. N'hésite pas à me contacter pour en savoir plus sur le déroulement exact.",
+    a: "C'est un programme de 3 mois avec un livret PDF chaque semaine (théorie + exercices PNL), 3 appels personnalisés (au début, au milieu et à la fin) et un suivi WhatsApp tout au long du parcours. Chaque semaine a son propre thème et ses défis concrets.",
   },
   {
     q: "Est-ce adapté si je procrastine beaucoup ?",

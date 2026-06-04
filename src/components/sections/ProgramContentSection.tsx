@@ -11,38 +11,33 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 const contents = [
   {
     icon: Video,
-    title: "Séances personnalisées",
-    // ⚠️ À MODIFIER : nombre de séances, durée, format (visio/téléphone/présentiel)
+    title: "12 semaines de transformation",
     description:
-      "Des séances individuelles adaptées à ton rythme et tes besoins, pour avancer pas à pas.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Suivi entre les séances",
-    // ⚠️ À MODIFIER : format du suivi (WhatsApp, email, fréquence...)
-    description:
-      "Un accompagnement continu pour que tu ne restes jamais bloquée trop longtemps.",
-  },
-  {
-    icon: BookOpen,
-    title: "Livrets et supports",
-    // ⚠️ À MODIFIER : détail des livrets/ressources fournis
-    description:
-      "Des ressources concrètes pour ancrer les apprentissages et avancer entre les séances.",
-  },
-  {
-    icon: PenLine,
-    title: "Exercices pratiques",
-    // ⚠️ À MODIFIER : type d'exercices PNL proposés
-    description:
-      "Des outils issus de la PNL pour comprendre tes schémas et les transformer en douceur.",
+      "Chaque semaine un thème, un plan d'action et des exercices concrets à appliquer dans ton quotidien.",
   },
   {
     icon: Star,
-    title: "Un suivi adapté à toi",
-    // ⚠️ À MODIFIER : durée totale de l'accompagnement, nombre de semaines/mois
+    title: "3 appels personnalisés",
     description:
-      "Chaque parcours est unique. L'accompagnement s'adapte à ta situation et tes objectifs.",
+      "Au début, au milieu et à la fin — pour débloquer ce qui te freine et booster ta progression.",
+  },
+  {
+    icon: BookOpen,
+    title: "Un livret hebdomadaire PDF",
+    description:
+      "Des outils concrets issus de la PNL pour passer à l'action rapidement.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Accompagnement WhatsApp",
+    description:
+      "Tu n'es jamais seule. Je suis là pour t'encourager et te rappeler que tu en es capable.",
+  },
+  {
+    icon: PenLine,
+    title: "Des défis d'action chaque semaine",
+    description:
+      "Pour installer des victoires, reprendre confiance et surtout… avancer.",
   },
 ];
 
