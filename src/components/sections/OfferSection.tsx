@@ -142,12 +142,12 @@ export function OfferSection() {
               href={siteConfig.calendlyOnlineUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group w-full flex items-center gap-4 bg-cream/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
+              className="group w-full flex flex-col items-center gap-3 bg-cream/10 backdrop-blur-sm rounded-2xl px-6 py-5 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
             >
-              <span className="w-10 h-10 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 flex-shrink-0 transition-colors duration-200">
+              <span className="w-10 h-10 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 transition-colors duration-200">
                 <Monitor size={18} aria-hidden="true" />
               </span>
-              <div className="text-left">
+              <div className="text-center">
                 <p className="font-script text-dusty-rose text-xl md:text-2xl leading-tight">
                   Tu préfères une séance individuelle ?
                 </p>
@@ -155,7 +155,7 @@ export function OfferSection() {
                   Coaching motivationnel PNL · 20 min · En ligne
                 </p>
               </div>
-              <span className="ml-auto inline-flex items-center gap-1.5 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose flex-shrink-0 transition-colors duration-200">
+              <span className="inline-flex items-center gap-1.5 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose transition-colors duration-200">
                 <CalendarDays size={14} aria-hidden="true" />
                 Réserver
               </span>
