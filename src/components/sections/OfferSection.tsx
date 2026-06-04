@@ -103,9 +103,9 @@ export function OfferSection() {
             {/* Card programme OSE */}
             <div className="bg-cream/10 backdrop-blur-sm rounded-3xl p-7 border border-off-white/20 flex flex-col text-left">
               <div className="mb-5">
-                <p className="font-script text-dusty-rose text-2xl mb-2">Pour nous rejoindre</p>
-                <p className="font-serif text-5xl text-off-white">{siteConfig.price}</p>
-                <p className="font-sans text-light-beige/70 text-sm mt-1">{siteConfig.priceSubtitle}</p>
+                <p className="font-script text-dusty-rose text-2xl mb-0">Pour nous rejoindre</p>
+                <p className="font-serif text-5xl text-off-white mt-1">{siteConfig.price}</p>
+                <p className="font-sans text-light-beige/70 text-sm mt-2">{siteConfig.priceSubtitle}</p>
               </div>
               <ul className="space-y-2.5 mb-6 flex-1">
                 {included.map((item) => (

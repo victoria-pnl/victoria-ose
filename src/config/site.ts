@@ -3,7 +3,7 @@ export const siteConfig = {
   programName: "Accompagnement OSE",
 
   // ⚠️ À MODIFIER : lien de paiement Stripe
-  paymentUrl: "https://buy.stripe.com/test_eVq28s86y6a59Z52or5ZC00",
+  paymentUrl: "https://buy.stripe.com/test_8x2dR98I22oe16X84U8N200",
 
   // Lien WhatsApp
   whatsappUrl:
