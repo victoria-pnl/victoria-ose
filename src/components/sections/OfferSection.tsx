@@ -142,7 +142,7 @@ export function OfferSection() {
               href={siteConfig.calendlyOnlineUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-4 bg-cream/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
+              className="group w-full flex items-center gap-4 bg-cream/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
             >
               <span className="w-10 h-10 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 flex-shrink-0 transition-colors duration-200">
                 <Monitor size={18} aria-hidden="true" />
