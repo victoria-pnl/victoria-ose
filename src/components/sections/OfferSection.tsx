@@ -138,26 +138,25 @@ export function OfferSection() {
 
           {/* Séance individuelle en ligne */}
           <motion.div variants={fadeInUp} className="mb-8">
-            <p className="font-script text-dusty-rose text-2xl md:text-3xl mb-1">
-              Tu préfères une séance individuelle ?
-            </p>
-            <p className="font-sans text-sm text-light-beige/70 mb-5">
-              Coaching motivationnel PNL · 20 min · En ligne
-            </p>
             <a
               href={siteConfig.calendlyOnlineUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex flex-col items-center gap-3 bg-cream/10 backdrop-blur-sm rounded-2xl px-10 py-6 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
+              className="group inline-flex items-center gap-4 bg-cream/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
             >
-              <span className="w-11 h-11 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 transition-colors duration-200">
-                <Monitor size={20} aria-hidden="true" />
+              <span className="w-10 h-10 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 flex-shrink-0 transition-colors duration-200">
+                <Monitor size={18} aria-hidden="true" />
               </span>
-              <p className="font-serif text-off-white text-base leading-snug">
-                Séance en ligne
-              </p>
-              <span className="inline-flex items-center gap-1 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose transition-colors duration-200">
-                <CalendarDays size={13} aria-hidden="true" />
+              <div className="text-left">
+                <p className="font-script text-dusty-rose text-xl md:text-2xl leading-tight">
+                  Tu préfères une séance individuelle ?
+                </p>
+                <p className="font-sans text-xs text-off-white/50 mt-0.5">
+                  Coaching motivationnel PNL · 20 min · En ligne
+                </p>
+              </div>
+              <span className="ml-auto inline-flex items-center gap-1.5 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose flex-shrink-0 transition-colors duration-200">
+                <CalendarDays size={14} aria-hidden="true" />
                 Réserver
               </span>
             </a>
