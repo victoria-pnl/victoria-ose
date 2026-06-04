@@ -9,8 +9,7 @@ export const siteConfig = {
   whatsappUrl:
     "https://api.whatsapp.com/send/?phone=32471827123&text&type=phone_number&app_absent=0",
 
-  // ⚠️ À MODIFIER : lien vers le livret découverte (Google Drive, Notion, etc.)
-  livretUrl: "#",
+  livretUrl: "/livret-decouverte.pdf",
 
   // Calendly
   calendlyOseUrl:
