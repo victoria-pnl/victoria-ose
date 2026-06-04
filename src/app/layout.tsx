@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
   },
   openGraph: {
-    title: "Accompagnement OSE — Victoria Coach PNL",
+    title: "Accompagnement OSE · Victoria Coach PNL",
     description:
       "Un accompagnement doux et personnalisé pour aider les femmes débordées à sortir de la procrastination, retrouver confiance et passer à l'action.",
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Accompagnement OSE — Victoria Coach PNL",
+    title: "Accompagnement OSE · Victoria Coach PNL",
     description:
       "Un accompagnement doux et personnalisé pour aider les femmes débordées à sortir de la procrastination, retrouver confiance et passer à l'action.",
   },

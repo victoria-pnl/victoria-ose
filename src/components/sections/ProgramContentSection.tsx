@@ -19,7 +19,7 @@ const contents = [
     icon: Star,
     title: "3 appels personnalisés",
     description:
-      "Au début, au milieu et à la fin — pour débloquer ce qui te freine et booster ta progression.",
+      "Au début, au milieu et à la fin, pour débloquer ce qui te freine et booster ta progression.",
   },
   {
     icon: BookOpen,

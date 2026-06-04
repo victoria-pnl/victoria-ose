@@ -1,31 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, CheckCircle2, CalendarDays, MapPin, Monitor } from "lucide-react";
+import { ArrowRight, Shield, CheckCircle2, CalendarDays, Monitor, BookOpen } from "lucide-react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { siteConfig } from "@/config/site";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
-const sessions = [
-  {
-    label: "En ligne",
-    sublabel: "Séance à distance",
-    icon: Monitor,
-    href: siteConfig.calendlyOnlineUrl,
-  },
-  {
-    label: "Cabinet Grez-Doiceau",
-    sublabel: "Place Joseph Hallaux 3",
-    icon: MapPin,
-    href: siteConfig.calendlyGrezUrl,
-  },
-  {
-    label: "Cabinet Hélécine",
-    sublabel: "Rue du Pont Neuf 60A",
-    icon: MapPin,
-    href: siteConfig.calendlyHelecineUrl,
-  },
-];
 
 const included = [
   "12 semaines d'accompagnement",
@@ -142,53 +122,45 @@ export function OfferSection() {
               Rejoindre l&apos;accompagnement
             </CTAButton>
 
-            {/* CTA secondaire — consultation gratuite */}
+            {/* CTA secondaire — livret découverte */}
             <div className="mt-5">
               <a
-                href={siteConfig.calendlyOseUrl}
+                href={siteConfig.livretUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 font-sans text-sm text-off-white/70 hover:text-off-white transition-colors duration-200 underline underline-offset-4 decoration-off-white/30 hover:decoration-off-white/60"
               >
-                <CalendarDays size={22} className="flex-shrink-0" aria-hidden="true" />
-                Pas encore sûre&nbsp;? Réserve une consultation gratuite de 30 min ✨
+                <BookOpen size={22} className="flex-shrink-0" aria-hidden="true" />
+                Pas encore sûre&nbsp;? Télécharge le livret découverte gratuit ✨
               </a>
             </div>
           </motion.div>
 
-          {/* Séances de coaching individuelles */}
+          {/* Séance individuelle en ligne */}
           <motion.div variants={fadeInUp} className="mb-8">
             <p className="font-script text-dusty-rose text-2xl md:text-3xl mb-1">
               Tu préfères une séance individuelle ?
             </p>
             <p className="font-sans text-sm text-light-beige/70 mb-5">
-              Coaching motivationnel PNL · 20 min
+              Coaching motivationnel PNL · 20 min · En ligne
             </p>
-            <div className="grid sm:grid-cols-3 gap-3">
-              {sessions.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex flex-col items-center gap-3 bg-cream/10 backdrop-blur-sm rounded-2xl p-6 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
-                >
-                  <span className="w-11 h-11 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 transition-colors duration-200">
-                    <s.icon size={20} aria-hidden="true" />
-                  </span>
-                  <p className="font-serif text-off-white text-base leading-snug">
-                    {s.label}
-                  </p>
-                  <p className="font-sans text-sm text-off-white/50">
-                    {s.sublabel}
-                  </p>
-                  <span className="mt-1 inline-flex items-center gap-1 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose transition-colors duration-200">
-                    <CalendarDays size={13} aria-hidden="true" />
-                    Réserver
-                  </span>
-                </a>
-              ))}
-            </div>
+            <a
+              href={siteConfig.calendlyOnlineUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex flex-col items-center gap-3 bg-cream/10 backdrop-blur-sm rounded-2xl px-10 py-6 border border-off-white/15 hover:border-dusty-rose/40 hover:bg-cream/15 transition-all duration-200"
+            >
+              <span className="w-11 h-11 rounded-full bg-off-white/10 flex items-center justify-center text-off-white/60 group-hover:text-dusty-rose group-hover:bg-dusty-rose/10 transition-colors duration-200">
+                <Monitor size={20} aria-hidden="true" />
+              </span>
+              <p className="font-serif text-off-white text-base leading-snug">
+                Séance en ligne
+              </p>
+              <span className="inline-flex items-center gap-1 font-sans text-sm text-dusty-rose/80 group-hover:text-dusty-rose transition-colors duration-200">
+                <CalendarDays size={13} aria-hidden="true" />
+                Réserver
+              </span>
+            </a>
           </motion.div>
 
           {/* Mention paiement sécurisé */}
