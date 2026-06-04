@@ -89,7 +89,7 @@ export function OfferSection() {
                 variant="white"
                 size="md"
                 external
-                className="w-full justify-center"
+                className="w-full justify-center mt-auto"
                 icon={<BookOpen size={16} aria-hidden="true" />}
               >
                 Télécharger gratuitement
