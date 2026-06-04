@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsappUrl:
     "https://api.whatsapp.com/send/?phone=32471827123&text&type=phone_number&app_absent=0",
 
-  livretUrl: "/livret-decouverte.pdf",
+  livretUrl: "https://drive.google.com/uc?export=download&id=1WdXw6NMHoJSWGgQ0Ak9DZikzEEWZ6qlJ",
 
   // Calendly
   calendlyOseUrl:
