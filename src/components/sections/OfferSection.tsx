@@ -6,13 +6,18 @@ import { CTAButton } from "@/components/ui/CTAButton";
 import { siteConfig } from "@/config/site";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
-
 const included = [
   "90 jours d'accompagnement (12 semaines)",
   "3 appels personnalisés (début, milieu, fin)",
   "1 livret PDF par semaine",
   "Suivi WhatsApp pendant 3 mois",
   "Défis d'action hebdomadaires",
+];
+
+const livretPoints = [
+  "Comprendre pourquoi tu procrastines vraiment",
+  "Identifier ton profil de blocage",
+  "Un défi de 3 jours pour te remettre en mouvement",
 ];
 
 export function OfferSection() {
@@ -22,25 +27,16 @@ export function OfferSection() {
       className="relative py-20 md:py-28 bg-warm-brown overflow-hidden"
       aria-labelledby="offer-heading"
     >
-      {/* Grandes feuilles claires gauche */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/illustrations/grande_3.svg"
-        alt=""
-        aria-hidden="true"
+      <img src="/illustrations/grande_3.svg" alt="" aria-hidden="true"
         className="absolute left-0 top-0 h-full w-auto max-w-[30%] pointer-events-none select-none"
-        style={{ filter: "brightness(10) saturate(0)", opacity: 0.2 }}
-      />
+        style={{ filter: "brightness(10) saturate(0)", opacity: 0.2 }} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/illustrations/grande_1.svg"
-        alt=""
-        aria-hidden="true"
+      <img src="/illustrations/grande_1.svg" alt="" aria-hidden="true"
         className="absolute right-0 top-0 h-full w-auto max-w-[28%] pointer-events-none select-none"
-        style={{ filter: "brightness(10) saturate(0)", opacity: 0.2 }}
-      />
+        style={{ filter: "brightness(10) saturate(0)", opacity: 0.2 }} />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8">
+      <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -49,102 +45,89 @@ export function OfferSection() {
           className="text-center"
         >
           {/* Tag */}
-          <motion.p
-            variants={fadeInUp}
-            className="font-script text-dusty-rose text-2xl md:text-3xl mb-4"
-          >
+          <motion.p variants={fadeInUp} className="font-script text-dusty-rose text-2xl md:text-3xl mb-4">
             Prête à commencer ?
           </motion.p>
 
           {/* Titre */}
-          <motion.h2
-            id="offer-heading"
-            variants={fadeInUp}
-            className="font-serif text-5xl md:text-6xl text-off-white leading-tight mb-4"
-          >
+          <motion.h2 id="offer-heading" variants={fadeInUp}
+            className="font-serif text-5xl md:text-6xl text-off-white leading-tight mb-4">
             {siteConfig.programName}
           </motion.h2>
 
           {/* Sous-titre */}
-          <motion.p
-            variants={fadeInUp}
-            className="font-sans text-lg text-light-beige mb-10 max-w-xl mx-auto leading-relaxed"
-          >
-            Un accompagnement humain, doux et personnalisé pour sortir de la
-            procrastination et avancer à ton rythme sans te juger, sans te
-            brusquer.
+          <motion.p variants={fadeInUp}
+            className="font-sans text-lg text-light-beige mb-10 max-w-xl mx-auto leading-relaxed">
+            Un accompagnement humain, doux et personnalisé pour sortir de la procrastination et avancer à ton rythme sans te juger, sans te brusquer.
           </motion.p>
 
-          {/* Carte offre */}
-          <motion.div
-            variants={fadeInUp}
-            className="bg-cream/10 backdrop-blur-sm rounded-4xl p-8 md:p-10 border border-off-white/20 mb-8"
-          >
-            {/* Prix */}
-            {/* ⚠️ À MODIFIER : prix définitif */}
-            <div className="mb-8">
-              <p className="font-script text-dusty-rose text-2xl md:text-3xl mb-2">
-                Investissement
-              </p>
-              <p className="font-serif text-6xl text-off-white">
-                {siteConfig.price}
-              </p>
-              <p className="font-sans text-light-beige text-base mt-2">
-                {siteConfig.priceSubtitle}
-              </p>
-            </div>
+          {/* 2 cards */}
+          <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-5 mb-5">
 
-            {/* Liste inclus */}
-            <ul className="space-y-3 mb-10 text-left max-w-sm mx-auto">
-              {included.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckCircle2
-                    size={18}
-                    className="text-dusty-rose flex-shrink-0 mt-0.5"
-                    aria-hidden="true"
-                  />
-                  <span className="font-sans text-off-white text-base">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-
-            {/* CTA principal */}
-            <CTAButton
-              href={siteConfig.paymentUrl}
-              variant="white"
-              size="lg"
-              external
-              className="w-full sm:w-auto justify-center"
-              icon={<ArrowRight size={18} aria-hidden="true" />}
-            >
-              Rejoindre l&apos;accompagnement
-            </CTAButton>
-
-            {/* CTA contact WhatsApp */}
-            <div className="mt-4">
-              <a
-                href={siteConfig.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-sans text-sm text-off-white/60 hover:text-off-white transition-colors duration-200"
-              >
-                Tu hésites encore ? Écris-moi sur WhatsApp, je te réponds personnellement.
-              </a>
-            </div>
-
-            {/* CTA secondaire — livret découverte */}
-            <div className="mt-5">
-              <a
+            {/* Card livret découverte */}
+            <div className="bg-cream/10 backdrop-blur-sm rounded-3xl p-7 border border-off-white/20 flex flex-col text-left">
+              <div className="mb-5">
+                <span className="inline-flex items-center gap-1.5 bg-dusty-rose/20 text-dusty-rose font-sans text-xs px-3 py-1 rounded-full mb-4">
+                  <BookOpen size={12} aria-hidden="true" />
+                  Offert gratuitement
+                </span>
+                <p className="font-script text-dusty-rose text-2xl mb-1">Livret découverte</p>
+                <p className="font-serif text-xl text-off-white leading-snug">
+                  Pourquoi tu procrastines ?
+                </p>
+              </div>
+              <ul className="space-y-2.5 mb-6 flex-1">
+                {livretPoints.map((p) => (
+                  <li key={p} className="flex items-start gap-2.5">
+                    <CheckCircle2 size={16} className="text-dusty-rose flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="font-sans text-sm text-off-white/80">{p}</span>
+                  </li>
+                ))}
+              </ul>
+              <CTAButton
                 href={siteConfig.livretUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 font-sans text-sm text-off-white/70 hover:text-off-white transition-colors duration-200 underline underline-offset-4 decoration-off-white/30 hover:decoration-off-white/60"
+                variant="white"
+                size="md"
+                external
+                className="w-full justify-center"
+                icon={<BookOpen size={16} aria-hidden="true" />}
               >
-                <BookOpen size={22} className="flex-shrink-0" aria-hidden="true" />
-                Pas encore sûre&nbsp;? Télécharge le livret découverte gratuit ✨
-              </a>
+                Télécharger gratuitement
+              </CTAButton>
+            </div>
+
+            {/* Card programme OSE */}
+            <div className="bg-cream/10 backdrop-blur-sm rounded-3xl p-7 border border-off-white/20 flex flex-col text-left">
+              <div className="mb-5">
+                <p className="font-script text-dusty-rose text-2xl mb-2">Investissement</p>
+                <p className="font-serif text-5xl text-off-white">{siteConfig.price}</p>
+                <p className="font-sans text-light-beige/70 text-sm mt-1">{siteConfig.priceSubtitle}</p>
+              </div>
+              <ul className="space-y-2.5 mb-6 flex-1">
+                {included.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5">
+                    <CheckCircle2 size={16} className="text-dusty-rose flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="font-sans text-sm text-off-white/80">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <CTAButton
+                href={siteConfig.paymentUrl}
+                variant="white"
+                size="md"
+                external
+                className="w-full justify-center"
+                icon={<ArrowRight size={16} aria-hidden="true" />}
+              >
+                Rejoindre l&apos;accompagnement
+              </CTAButton>
+              <p className="mt-3 font-sans text-xs text-off-white/50 text-center">
+                Tu hésites ?{" "}
+                <a href={siteConfig.whatsappUrl} target="_blank" rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-off-white/80 transition-colors duration-200">
+                  Écris-moi sur WhatsApp
+                </a>
+              </p>
             </div>
           </motion.div>
 
@@ -175,10 +158,8 @@ export function OfferSection() {
           </motion.div>
 
           {/* Mention paiement sécurisé */}
-          <motion.p
-            variants={fadeInUp}
-            className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center font-sans text-sm text-light-beige/70 text-center"
-          >
+          <motion.p variants={fadeInUp}
+            className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center font-sans text-sm text-light-beige/70 text-center">
             <Shield size={22} className="flex-shrink-0" aria-hidden="true" />
             <span>Le paiement est sécurisé et s&apos;effectue via notre prestataire externe.</span>
           </motion.p>
