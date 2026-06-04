@@ -84,16 +84,18 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <CTAButton
-                href={siteConfig.livretUrl}
-                variant="white"
-                size="md"
-                external
-                className="w-full justify-center"
-                icon={<BookOpen size={16} aria-hidden="true" />}
-              >
-                Télécharger gratuitement
-              </CTAButton>
+              <div className="mt-auto">
+                <CTAButton
+                  href={siteConfig.livretUrl}
+                  variant="white"
+                  size="md"
+                  external
+                  className="w-full justify-center"
+                  icon={<BookOpen size={16} aria-hidden="true" />}
+                >
+                  Télécharger gratuitement
+                </CTAButton>
+              </div>
             </div>
 
             {/* Card programme OSE */}
@@ -111,16 +113,17 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <CTAButton
-                href={siteConfig.paymentUrl}
-                variant="white"
-                size="md"
-                external
-                className="w-full justify-center"
-                icon={<ArrowRight size={16} aria-hidden="true" />}
-              >
-                Rejoindre l&apos;accompagnement
-              </CTAButton>
+              <div className="mt-auto">
+                <CTAButton
+                  href={siteConfig.paymentUrl}
+                  variant="white"
+                  size="md"
+                  external
+                  className="w-full justify-center"
+                  icon={<ArrowRight size={16} aria-hidden="true" />}
+                >
+                  Rejoindre l&apos;accompagnement
+                </CTAButton>
               <p className="mt-3 font-sans text-xs text-off-white/50 text-center">
                 Tu hésites ?{" "}
                 <a href={siteConfig.whatsappUrl} target="_blank" rel="noopener noreferrer"
@@ -128,6 +131,7 @@ export function OfferSection() {
                   Écris-moi sur WhatsApp
                 </a>
               </p>
+              </div>
             </div>
           </motion.div>
 
