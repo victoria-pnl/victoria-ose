@@ -25,6 +25,6 @@ export const siteConfig = {
   linktreeUrl: "https://linktr.ee/victoria.coachpnl",
 
   // ⚠️ À CONFIRMER avec Victoria
-  price: "279 €",
+  price: "300 €",
   priceSubtitle: "Contacte-moi pour en savoir plus",
 };
